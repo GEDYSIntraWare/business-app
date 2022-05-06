@@ -1,0 +1,117 @@
+* {
+	font-family: "Segoe", "Segue UI", "Arial", "Helvetica", sans serif;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #f7f7f7;
+	font-size: 1em;
+}
+p {
+	margin-top: 2em;
+}
+a {
+	text-decoration: none;
+}
+.store {
+	width: 25em;
+	height: auto;
+}
+header {
+	width: 100%;
+	background-color: white;
+	min-height: 4em;
+}
+.getAppInfo {
+	/* display: none; */
+	text-align: center;
+	padding: 0 4em;
+}
+.product {
+	margin-top: 5em;
+}
+.product * {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: normal;
+	font-size: 36pt;
+}
+.hasRecordPart {
+	margin-top: 5em;
+}
+.hasRecordPart * {
+	font-size: 28pt;
+}
+.buttons {
+	margin-top: 10em;
+}
+.legal {
+	margin-top: 15em;
+}
+.legal * {
+	font-size: 10pt;
+}
+.mainSinglePageHeaderContent {
+	color: #555;
+	display: block;
+	font-size: 2em;
+	margin: 0em auto;
+	padding: 0;
+	width: 100%;
+	float: left;
+	background-color: #fff;
+}
+.startBtnMW {
+	background-color: #3282C8;
+	color: #fff;
+	float: left;
+	height: auto;
+	margin-right: 0.5em;
+	padding: 0 0.4em;
+	width: auto;
+}
+.startBtn {
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 2em;
+	margin: auto;
+	text-align: center;
+}
+.singlePageLogo {
+	height: 1em;
+	margin-top: 0.4em;
+	width: auto;
+}
+.productLogo {
+	border-radius: 0.8em;
+}
+.de {
+	display: none;
+}
+.en {
+	display: none;
+}
+.clear {
+	clear: both;
+}
+.space {
+	width: 0.5em;
+}
+button {
+	margin-top: 1em;
+	background-color: white;
+	border: 1px solid #457db7;
+	border-radius: 0.75em;
+	color: #457db7;
+	padding: 0.75em 1em;
+}
+button:hover {
+	background-color: #457db7;
+	color: white;
+}
+button:active {
+	background-color: #ffa242;
+	border-color: #457db7;
+	color: white;
+}
