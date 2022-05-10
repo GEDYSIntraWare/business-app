@@ -55,7 +55,8 @@ function reload() {
 function openInWeb(){
     var searchParams = new URLSearchParams(window.location.search);
     var baseUrl = searchParams.get("baseUrl");
-    var record = searchParams.get("openDocument");
+    var openDocumentPart = new URLSearchParams(searchParams.get("openDocument"));
+    var record =openDocumentPart.get("oid");
     window.open(baseUrl+"_openRecord/"+record+"?forceWeb=true", "_blank");
 }
 
