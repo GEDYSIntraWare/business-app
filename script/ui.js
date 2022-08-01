@@ -49,7 +49,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 function reload() {
-    location.reload();
+    //location.reload();
+	var url = new URL(window.location);
+    if (url.search != "") {
+        var params = new URLSearchParams(url.search);
+        var setup = params.get("goToSetup");
+
+        if (setup === "true") {
+           url.pathname = "setup";
+        }
+    }
+    url.hostname = "gedysintraware.github.io"
+    url = url.toString().replace("+", "%20")  // Browsers resolve the space as +
+    window.open(url, "_blank");
 }
 
 function openInWeb(){
