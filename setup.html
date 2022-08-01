@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="alternate" href="android-app://com.gi.crm.gomobile/https/gedysintraware.github.io/setup" />
+    <link rel="alternate" href="android-app://com.gi.crm.gomobile/https/gomobile.gedys-intraware.de/setup" />
+    <meta charset="UTF-8">
+    <meta name="description" content="goMobile Pro">
+    <title>goMobile Pro</title>
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="./script/url.js"></script>
+    <script src="./script/urlsearchparams.js"></script>
+</head>
+<script>
+    var url = new URL(window.location);
+    var suffix = ""
+    if (url.search != "") {
+        suffix = new URLSearchParams(url.search);
+        if(suffix.get("goToSetup") !== "true") {
+            suffix.set("goToSetup", "true");
+        }
+    }
+    window.location.replace("/redirect.html?" + suffix);
+</script>
