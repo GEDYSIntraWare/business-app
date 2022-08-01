@@ -42,7 +42,7 @@ function reload() {
            url.pathname = "setup";
         }
     }
-    //url.hostname = "gedysintraware.github.io"
+    url.hostname = "gedysintraware.github.io"
     url = url.toString().replace("+", "%20")  // Browsers resolve the space as +
     window.open(url, "_blank");
 }
