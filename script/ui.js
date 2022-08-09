@@ -49,18 +49,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 function reload() {
-    var url = new URL(window.location);
-    if (url.search != "") {
-        var params = new URLSearchParams(url.search);
-        var setup = params.get("goToSetup");
-
-        if (setup === "true") {
-           url.pathname = "setup";
-        }
-    }
-    url.hostname = "gedysintraware.github.io"
-    url = url.toString().replace("+", "%20");
-    window.open(url, "_blank");
+    location.reload();
 }
 
 function openInWeb(){
@@ -68,7 +57,7 @@ function openInWeb(){
     var baseUrl = searchParams.get("baseUrl");
     var openDocumentPart = new URLSearchParams(searchParams.get("openDocument"));
     var record = openDocumentPart.get("oid");
-    window.open(baseUrl+"_openRecord/"+record+"?forceWeb=true", "_blank");
+    window.open(baseUrl+"/openRecord/"+record+"?forceWeb=true", "_blank");
 }
 
 function decodeHTMLEntities(text) {
