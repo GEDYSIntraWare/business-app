@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "com.gi.crm.gomobile",
+                 "sha256_cert_fingerprints": ["2D:31:8B:7E:75:74:42:A8:CD:12:E3:7F:44:BA:F3:4C:10:E5:08:0A:9F:C6:F5:C1:87:AB:FD:B7:D9:E7:79:69"] }
+}]
