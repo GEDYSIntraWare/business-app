@@ -50,8 +50,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 function reload() {
     var url = new URL(window.location);
-    url.pathname = "/redirect";
-    url.search = url.search +"&doRedirect=true";
+    url.hostname = "gedysintraware.github.io/business-app";
     window.open(url, "_blank");
 }
 
