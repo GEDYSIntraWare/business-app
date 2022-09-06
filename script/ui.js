@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 function reload() {
     var url = new URL(window.location);
     url.hostname = "gedysintraware.github.io"
+    url.pathname = "/redirect";
     window.open(url, "_blank");
 }
 
