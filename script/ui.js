@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 function reload() {
     var url = new URL(window.location);
     url.pathname = "/redirect";
+    url.search = url.search +"&doRedirect=true";
     window.open(url, "_blank");
 }
 
