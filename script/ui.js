@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 function reload() {
     var url = new URL(window.location);
-    url.hostname = "gedysintraware.github.io/business-app";
+    url.hostname = "gedysintraware.github.io";
+    url.pathname= "/business-app" + url.pathname;
     window.open(url, "_blank");
 }
 
