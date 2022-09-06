@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <script>
-    debugger;
-    window.location.replace("/redirect.html"+window.location.search);
+    var url = new URL(window.location);
+    url.pathname = "/redirect";
+    window.location.replace(url);
 </script>
