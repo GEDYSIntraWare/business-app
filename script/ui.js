@@ -49,7 +49,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 function reload() {
-    window.open(window.location, "_blank");
+    var url = new URL(window.location);
+    url.hostname = "gedysintraware.github.io"
+    window.open(url, "_blank");
 }
 
 function openInWeb(){
