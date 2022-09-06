@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 function reload() {
-    location.reload();
+    window.open(window.location, "_blank");
 }
 
 function openInWeb(){
